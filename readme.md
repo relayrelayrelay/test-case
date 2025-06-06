@@ -19,6 +19,53 @@
 
 *Note: Test infrastructure and coverage will be progressively enhanced.*
 
+## Server Integration
+
+### Overview
+This section provides comprehensive guidance for integrating and connecting to the project's server infrastructure.
+
+### Connection Requirements
+- Supported server environments: Node.js, Docker, Cloud platforms
+- Minimum Node.js version: 16.x
+- Required network ports: 3000 (development), 443 (production)
+
+### Connection Configuration
+
+#### Basic Server Connection
+```javascript
+const serverConfig = {
+  host: 'localhost',
+  port: 3000,
+  protocol: 'http',
+  environment: 'development'
+};
+```
+
+#### Secure Connection Parameters
+```javascript
+const secureServerConfig = {
+  host: 'api.example.com',
+  port: 443,
+  protocol: 'https',
+  environment: 'production',
+  ssl: {
+    enabled: true,
+    certificatePath: './ssl/server.crt'
+  }
+};
+```
+
+### Integration Strategies
+1. **Direct Connection**: Ideal for local development
+2. **Containerized Deployment**: Recommended for consistent environments
+3. **Cloud Platform Integration**: Supports scalable architectures
+
+### Connection Troubleshooting
+- Verify network connectivity
+- Check firewall settings
+- Confirm server is running
+- Validate configuration parameters
+
 ## API Documentation
 
 ### Base URL
