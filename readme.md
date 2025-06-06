@@ -40,6 +40,21 @@ Authorization: Bearer {your_access_token}
 - Create User: `/users/create` (POST)
 - User Login: `/auth/login` (POST)
 
+### Server Integration
+1. **Connection Methods**
+   - Establish server connection using standard configuration
+   - Supports both local and remote server environments
+
+2. **Configuration Options**
+   ```javascript
+   const serverConfig = {
+     host: 'localhost',
+     port: 3000,
+     protocol: 'https',
+     timeout: 5000
+   };
+   ```
+
 ### Error Handling
 - Comprehensive error response format
 - Rate limiting (100 requests per minute)
