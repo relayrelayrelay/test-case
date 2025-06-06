@@ -40,27 +40,8 @@ Authorization: Bearer {your_access_token}
 - Create User: `/users/create` (POST)
 - User Login: `/auth/login` (POST)
 
-### Error Handling
-- Comprehensive error response format
-- Rate limiting (100 requests per minute)
-
-### Security Recommendations
-1. Always use HTTPS
-2. Store tokens securely
-3. Implement token rotation
-4. Use strong, unique passwords
-
-### Versioning
-- Current API Version: `v1`
-- Deprecated versions will be announced with a 6-month deprecation notice
-
-## Server Integration
-
-### Overview
-Server integration is a critical aspect of our project, providing seamless connectivity and robust configuration options.
-
-### Connection Methods
-1. **Direct Connection**
+### Server Integration
+1. **Connection Methods**
    - Establish server connection using standard configuration
    - Supports both local and remote server environments
 
@@ -74,19 +55,16 @@ Server integration is a critical aspect of our project, providing seamless conne
    };
    ```
 
-### Environment Setup
-- Ensure required dependencies are installed
-- Configure environment variables
-- Validate server connection before deployment
+### Error Handling
+- Comprehensive error response format
+- Rate limiting (100 requests per minute)
 
-### Best Practices
-- Use secure, encrypted connections
-- Implement proper error handling
-- Log connection events for monitoring
-- Regularly update server configurations
+### Security Recommendations
+1. Always use HTTPS
+2. Store tokens securely
+3. Implement token rotation
+4. Use strong, unique passwords
 
-### Troubleshooting
-- Check network connectivity
-- Verify firewall and security group settings
-- Validate authentication credentials
-- Review server logs for detailed error information
+### Versioning
+- Current API Version: `v1`
+- Deprecated versions will be announced with a 6-month deprecation notice
